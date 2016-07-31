@@ -1,0 +1,174 @@
+\documentclass[a4paper,8pt]{article}
+%-----------------------------------------------------------
+\usepackage[top=0.75in, bottom=0.75in, left=0.55in, right=0.55in]{geometry}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{multicol}
+\usepackage{palatino}
+\usepackage{boldline}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\fontfamily{SansSerif}
+
+\selectfont
+\setlist[itemize]{leftmargin=3mm}
+
+\usepackage[T1]{fontenc}
+\usepackage
+%[ansinew]
+[utf8]
+{inputenc}
+
+\usepackage{color}
+\definecolor{mygrey}{gray}{0.75}
+\textheight=9.75in
+\raggedbottom
+
+\setlength{\tabcolsep}{0in}
+\newcommand{\isep}{-2 pt}
+\newcommand{\lsep}{-0.5cm}
+\newcommand{\psep}{-0.6cm}
+\renewcommand{\labelitemii}{$\circ$}
+
+\pagestyle{empty}
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+
+\newcommand{\resheading}[1]{
+
+\begin{center}
+\rule{\textwidth}{1pt}\vspace{-3pt}\\
+	\textsc{{\textbf{#1}}}\vspace{-8pt}\\
+\rule{\textwidth}{1pt}\\
+\end{center}
+\vspace{-5pt}
+}
+
+\newcommand{\ressubheading}[3]{
+\begin{tabular*}{6.62in}{l @{\extracolsep{\fill}} r}
+	\textsc{{\textbf{#1}}} & \textsc{\textit{[#2]}} \\
+\end{tabular*}\vspace{-8pt}}
+%-----------------------------------------------------------
+
+\begin{document}
+
+\begin{minipage}{.1\textwidth}
+\hspace*{-0.2in}
+ \includegraphics[width=2cm,height=2cm]{iitglogo.png}
+\end{minipage}
+\begin{minipage}{.55\textwidth}
+
+\textbf  {\large{Name}} \\
+\indent {Roll No. XXXXXXXXX }\\
+\indent {B.Tech – Computer Science and Engineering }\\
+\indent {Department of Computer Science and Engineering}\\
+\indent {Indian Institute of Technology Guwahati}\\
+\end{minipage}
+\hfill
+\begin{minipage}{.30\textwidth}
+\begin{flushright}
+{+91-}\\
+{.....@iitg.ac.in}\\
+{.....@gmail.com} \\
+{Personal Link}
+\end{flushright}
+\end{minipage}
+
+\begin{center}
+	\begin{tabular*}{\textwidth}{p{5cm}@{\hskip 0.2in} l@{\hskip 0.2in} l@{\hskip 0.2in} l@{\hskip 0.2in}}
+		\hline
+		\textbf{Degree} & \textbf{University/Institute} & \textbf{CPI/Percentage} & \textbf{Year}\vspace{0.5pt}\\
+		\hline
+		B. Tech - Computer Science and Engineering& Indian Institute of Technology Guwahati & X.XX/10 & 2013 - Present\\
+		Senior Secondary &  &  & \\
+		Secondary &  &  & \\
+		
+	\end{tabular*}
+\end{center}
+
+\resheading{\textbf{EXPERIENCES}}
+\noindent {\textbf{Company}}  \hfill 
+\textit{MAY – JULY 2016}\\
+\noindent \textit{Title}\\
+\noindent \textit{Mentor: } Name\\
+\noindent \textit{Tools Used: } Apache JMeter
+
+\begin{itemize}
+	\setlength\itemsep{0.05em}
+\item  \noindent  description of work
+\item \noindent   your contribution
+
+\end{itemize}
+
+\resheading{\textbf{PROJECTS} }
+\noindent \textit{Title}                                                                                    \hfill \textit{Time}\\
+\textit{Guide}\vspace{3pt}\\
+Description\vspace{3pt}\\
+\textit{Tools Used: }Python, Django, some external modules (pillow, django-multiuploader, reportLab) to support
+few features\\
+\rule{\textwidth}{0.5pt}
+
+\resheading{\textbf{ACHIEVEMENTS} }
+\vspace{-8pt}
+\begin{itemize}
+	\setlength\itemsep{0.05em}
+	\item Achievement 1
+	\item \noindent Achievement 2
+	\item \noindent Achievement 3
+\end{itemize}
+
+\resheading{\textbf{TECHNICAL PROFICIENCY} }
+\vspace{-8pt}
+\begin{itemize}
+	\setlength\itemsep{0.05em}
+\item \noindent Programming Languages: C, C++, Python, Visual Basic (Basic), Java, BeanShell
+\item \noindent Web Related Languages: HTML, CSS, Javascript
+\item \noindent Frameworks: Django
+\item \noindent Operating Systems: Linux, Windows
+\item \noindent Tools and IDE : Visual Studio(Basic), Visual C++ (Basic), Apache JMeter
+\end{itemize}
+
+\resheading{\textbf{COURSES TAKEN} }
+\vspace{-8pt}
+\begin{multicols}{2}
+\begin{itemize}
+	\setlength\itemsep{0.05em}
+	\item Compilers\textsuperscript{\#}
+	\item Data Structures\textsuperscript{\#} and Algorithms
+	\item Databases\textsuperscript{\#}
+	\item Software Engineering\textsuperscript{\#}
+	\item Digital Design \& Computer Organisation and Architecture 
+	\item Operating System\textsuperscript{\#}
+	\item Data Communications \& Computer Networks\textsuperscript{\#}
+	\item System Software and Programming Lab
+	\item Computer Peripherals and Interfacing Lab
+	\item Hardware Lab
+	\item Formal Languages and Automata Theory \& Theory of Computation
+	\item Probability Theory and Random Processes
+	\item Optimisation 
+\end{itemize}
+\end{multicols}
+\small \# - Accompanied with Lab Courses
+\resheading{\textbf{POSITIONS OF RESPONSIBLITY} }
+\begin{itemize}
+	\setlength\itemsep{0.05em}
+\item \noindent Responsibility 1
+\item \noindent Responsibility 2
+\item \noindent Responsibility 3
+\item \noindent Responsibility 4
+\end{itemize}
+
+\resheading{\textbf{EXTRA - CURRICULAR ACTIVITIES} }
+\begin{itemize}
+	\setlength\itemsep{0.05em}
+\item \noindent Activity 1
+\item \noindent Activity 2
+\item \noindent Activity 3
+\item \noindent Activity 4
+\item \noindent  Activity 5
+\end{itemize}
+\resheading{\textit{\textbf{(References available on request)}}}
+\end{document}
+
